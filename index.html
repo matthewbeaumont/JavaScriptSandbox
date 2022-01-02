@@ -6,10 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript examples</title>
     <link rel="stylesheet" href="./CSS/Stylesheet.css" />
+    <link rel="icon" href="/Images/favicon.ico" />
+    <!-- JavaScript in the head section -->
+    <script>
+      function revertTheSentence() {
+        document.getElementById("changeMessageOnClick").innerHTML =
+          "Click button below to change the message.";
+      }
+    </script>
   </head>
   <body>
-    <h1>Javascript Examples</h1>
-    <p>some text</p>
     <a href="Pages/JavaScriptIntroduction.html">Intro to JavaScript</a>
+    <h1>JavaScript Examples</h1>
+    <p id="changeMessageOnClick">Click button below to change the message.</p>
+    <!-- See below how 2 JavaScript statements can be added together by separating them with a ;  -->
+    <button
+      onclick="document.getElementById('changeMessageOnClick').innerHTML = 'the message has changed to this.'; document.getElementById('changeMessageOnClick').style.fontSize='35px'"
+    >
+      Click here to change the message.
+    </button>
+    <button onclick="revertTheSentence()">
+      Click here to revert the message.
+    </button>
   </body>
 </html>
