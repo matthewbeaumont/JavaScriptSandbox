@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../Images/favicon.ico" />
+    <title>JavaScript Introduction</title>
+    <link rel="stylesheet" href="./../CSS/Stylesheet.CSS" />
+    <link rel="icon" href="./../Images/favicon.ico" />
     <title>Intro to JavaScript</title>
+    <!-- JavaScript in the head section -->
+    <script>
+      function revertTheSentence() {
+        document.getElementById("changeMessageOnClick").innerHTML =
+          "Click button below to change the message.";
+      }
+    </script>
   </head>
   <body>
     <h1>An introduction to JavaScript</h1>
-    <a href="../index.html">Home</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="JavaScriptIntroduction.html">Intro to JavaScript</a>
+    </nav>
+    <p id="changeMessageOnClick">Click button below to change the message.</p>
+    <!-- See below how 2 JavaScript statements can be added together by separating them with a ;  -->
+    <button
+      onclick="document.getElementById('changeMessageOnClick').innerHTML = 'the message has changed to this.'; document.getElementById('changeMessageOnClick').style.fontSize='35px'"
+    >
+      Click here to change the message.
+    </button>
+    <button onclick="revertTheSentence()">
+      Click here to revert the message.
+    </button>
   </body>
 </html>
