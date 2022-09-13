@@ -10,3 +10,10 @@ a {
   background-color: red;
   padding: 1rem;
 }
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}

@@ -13,15 +13,19 @@
       function revertTheSentence() {
         document.getElementById("changeMessageOnClick").innerHTML =
           "Click button below to change the message.";
+        document.getElementById("changeMessageOnClick").style.fontSize = "16px";
       }
     </script>
   </head>
   <body>
-    <h1>An introduction to JavaScript</h1>
     <nav>
       <a href="../index.html">Home</a>
       <a href="JavaScriptIntroduction.html">Intro to JavaScript</a>
     </nav>
+    <h1>An introduction to JavaScript</h1>
+
+    <h2>getElementById example</h2>
+
     <p id="changeMessageOnClick">Click button below to change the message.</p>
     <!-- See below how 2 JavaScript statements can be added together by separating them with a ;  -->
     <button
@@ -32,5 +36,17 @@
     <button onclick="revertTheSentence()">
       Click here to revert the message.
     </button>
+    <br />
+    <br />
+    <i
+      >assign an id to an element. Use the javascript method
+      <b>getElementById</b>
+      to target that element and then use innerHTML to change the content of the
+      element between the tags to the content specific in the parentheses.
+    </i>
+    <br />
+    <i> A second command changes the font size. </i>
+
+    <h2></h2>
   </body>
 </html>
